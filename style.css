@@ -225,16 +225,16 @@ font-weight: 600;
 }
 
 footer{
-    width: 1920px;
-    height: 636px;
+    width: 1890px;
+    height: 350px;
 background: #0B0223;
 color: #FFF; 
 display: flex;
 flex-direction: column;
 align-items: center;
-
+padding: 50px 0;
 }
-.about, .about div,.us{
+.about, .about div,.us,.us div,.terms,.terms div{
     display: flex;
     gap: 50px;
 
@@ -246,7 +246,15 @@ font-weight: 600;
 footer h1{
     color: #FFF;
 }
-
+.us,.terms {
+    margin-top:  20px;
+}
+.terms div h2,.copy h2{
+    color: rgba(255, 255, 255, 0.60);
+text-align: center;
+font-size: 16px;
+font-weight: 500;
+}
 
 
         
@@ -254,13 +262,14 @@ footer h1{
 
 @media screen and (min-width:425px) and (max-width:576px) {
 
-    nav,.gamer,.online-gamer-container,.play{
+    nav,.gamer,.online-gamer-container,.play,.about,.us,.terms{
         flex-direction: column;
         padding: 0;
         
     }
 .games{
-    padding: 0;
+    padding:0;
+    padding-bottom: 70px;
     margin: 0;
 }
 
@@ -309,6 +318,10 @@ footer h1{
     text-align: center
    }
  
+   .games div div{
+    width: auto;
+    height: auto;
+   }
     
   
   .image-1{
@@ -318,6 +331,18 @@ footer h1{
     right: 0;
     top:-100px;
     width: 150px;
+}
+footer{
+
+    width: auto;
+    height: auto;
+    padding: 0;
+}
+.about,.terms,.us{
+    gap: 0;
+}
+.about div,.terms div,.us div{
+    gap: 10px;
 }
 }
 
@@ -339,6 +364,9 @@ footer h1{
  .gamer,.play-des,.play-des h1{
     text-align: center;
  }
+ .play-image{
+    padding-left: 100px;
+ }
  .image-1{
     width: 700px;
  }
@@ -356,6 +384,17 @@ footer h1{
     display: grid;
     grid-template-columns: repeat(2,1Fr);
     gap: 50px;
+}
+.sec-1,.sec-2{
+    gap: 60px;
+    width: 400px;
+}
+
+.sec-1 div h2,.sec-2 div h2{
+    font-size: 10px;
+}
+footer{
+    width: auto;
 }
 
 }
